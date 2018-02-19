@@ -12,20 +12,35 @@ public class Word {
     //Default Translation for the word
     private String mDefaultTranslation;
 
+    // Drawable resource ID
+    private int mImageResourceId;
+
+
     //Constructor
-    public Word(String defaultTranslation, String miwakTranslation){
+    public Word(String defaultTranslation, String miwakTranslation, int imageResourceId){
         mDefaultTranslation = defaultTranslation;
         mMiwakTranslation = miwakTranslation;
+        mImageResourceId = imageResourceId;
     }
 
-    //getters
-    //Get the default translation of the word
+    /*
+    * @return Get the default translation of the word
+     */
     public String getDefaultTranslation(){
         return mDefaultTranslation;
     }
 
-    //Get the Miwak translation of the word
+    /**
+     * @return Get the Miwak translation of the word
+     */
     public String getMiwaktTranslation(){
         return mMiwakTranslation;
+    }
+
+    /**
+     * Get the image resource ID
+     */
+    public int getImageResourceId() {
+        return mImageResourceId;
     }
 }
