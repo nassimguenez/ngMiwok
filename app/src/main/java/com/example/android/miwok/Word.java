@@ -23,6 +23,12 @@ public class Word {
         mImageResourceId = imageResourceId;
     }
 
+    //Constructor
+    public Word(String defaultTranslation, String miwakTranslation){
+        mDefaultTranslation = defaultTranslation;
+        mMiwakTranslation = miwakTranslation;
+    }
+
     /*
     * @return Get the default translation of the word
      */
