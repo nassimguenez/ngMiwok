@@ -12,6 +12,9 @@ public class Word {
     //Default Translation for the word
     private String mDefaultTranslation;
 
+    //Default Translation for the word
+    private String mArabicTranslation;
+
     /**
      * Image resource ID for the word
      */
@@ -24,16 +27,18 @@ public class Word {
 
 
     //Constructor
-    public Word(String defaultTranslation, String miwakTranslation, int imageResourceId) {
+    public Word(String defaultTranslation, String miwakTranslation, String arabicTranslation, int imageResourceId) {
         mDefaultTranslation = defaultTranslation;
         mMiwakTranslation = miwakTranslation;
+        mArabicTranslation = arabicTranslation;
         mImageResourceId = imageResourceId;
     }
 
     //Constructor
-    public Word(String defaultTranslation, String miwakTranslation) {
+    public Word(String defaultTranslation,  String arabicTranslation, String miwakTranslation) {
         mDefaultTranslation = defaultTranslation;
         mMiwakTranslation = miwakTranslation;
+        mArabicTranslation = arabicTranslation;
     }
 
     /*
@@ -48,6 +53,10 @@ public class Word {
      */
     public String getMiwaktTranslation() {
         return mMiwakTranslation;
+    }
+
+    public String getArabicTranslation(){
+        return mArabicTranslation;
     }
 
     /**

@@ -75,6 +75,12 @@ public class WordAdapter extends ArrayAdapter<Word> {
         // set this text on the name TextView
         defaultTextView.setText(currentWord.getDefaultTranslation());
 
+        // Find the TextView in the list_item.xml layout with the ID version_name
+        TextView arabicTextView = (TextView) listItemView.findViewById(R.id.arabic_text_view);
+        // Get the version name from the current AndroidFlavor object and
+        // set this text on the name TextView
+        arabicTextView.setText(currentWord.getArabicTranslation());
+
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.image_view);
 
         // Check if an image is provided for this word or not

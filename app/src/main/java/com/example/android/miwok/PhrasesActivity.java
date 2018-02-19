@@ -30,16 +30,16 @@ public class PhrasesActivity extends AppCompatActivity {
 
         //Create an array of words
         ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("Where are you going?","minto wuksus?"));
-        words.add(new Word("What is your name?","tinnә oyaase'nә?"));
-        words.add(new Word("My name is...","oyaaset..."));
-        words.add(new Word("How are you feeling?","michәksәs?"));
-        words.add(new Word("I’m feeling good.","kuchi achit"));
-        words.add(new Word("Are you coming?","әәnәs'aa?"));
-        words.add(new Word("Yes, I’m coming.","hәә’ әәnәm"));
-        words.add(new Word("I’m coming.","әәnәm"));
-        words.add(new Word("Let’s go.","yoowutis"));
-        words.add(new Word("Come here.","әnni'nem"));
+        words.add(new Word("Where are you going?", "إلى أين تذهب؟","minto wuksus?"));
+        words.add(new Word("What is your name?","ما إسمك؟" ,"tinnә oyaase'nә?"));
+        words.add(new Word("My name is...","إسمي...","oyaaset..."));
+        words.add(new Word("How are you feeling?", "كيف هو شعورك؟","michәksәs?"));
+        words.add(new Word("I’m feeling good.", "أشعر بخير.","kuchi achit"));
+        words.add(new Word("Are you coming?", "أأنت آت؟","әәnәs'aa?"));
+        words.add(new Word("Yes, I’m coming.", "نعم، إني آتٍ.","hәә’ әәnәm"));
+        words.add(new Word("I’m coming.","إني آتٍ.","әәnәm"));
+        words.add(new Word("Let’s go.","هيا نذهب","yoowutis"));
+        words.add(new Word("Come here.","تعال هنا.","әnni'nem"));
 
 
 

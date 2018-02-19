@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ميووك</string>
+    <string name="category_phrases">عبارات مفيدة</string>
+    <string name="category_colors">ألوان</string>
+    <string name="category_numbers">أعداد</string>
+    <string name="category_family">أفراد العائلة</string>
+</resources>
