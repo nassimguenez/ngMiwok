@@ -8,38 +8,38 @@ public class Word {
 
     //Miwak Translation for the word
     private String mMiwakTranslation;
-
     //Default Translation for the word
     private String mDefaultTranslation;
-
     //Default Translation for the word
     private String mArabicTranslation;
-
     /**
      * Image resource ID for the word
      */
     private int mImageResourceId = NO_IMAGE_PROVIDED;
-
     /**
      * Constant value that represents no image was provided for this word
      */
     private static final int NO_IMAGE_PROVIDED = -1;
-
+    //Default Audio resid
+    private int mAudioResid;
 
     //Constructor
-    public Word(String defaultTranslation, String miwakTranslation, String arabicTranslation, int imageResourceId) {
+    public Word(String defaultTranslation, String miwakTranslation, String arabicTranslation, int imageResourceId, int audioResid) {
         mDefaultTranslation = defaultTranslation;
         mMiwakTranslation = miwakTranslation;
         mArabicTranslation = arabicTranslation;
         mImageResourceId = imageResourceId;
+        mAudioResid = audioResid;
     }
 
     //Constructor
-    public Word(String defaultTranslation,  String arabicTranslation, String miwakTranslation) {
+    public Word(String defaultTranslation,  String arabicTranslation, String miwakTranslation, int audioResid) {
         mDefaultTranslation = defaultTranslation;
         mMiwakTranslation = miwakTranslation;
         mArabicTranslation = arabicTranslation;
+        mAudioResid = audioResid;
     }
+
 
     /*
     * @return Get the default translation of the word
@@ -59,6 +59,8 @@ public class Word {
         return mArabicTranslation;
     }
 
+    public int getAudioResourceId(){return mAudioResid;}
+
     /**
      * Get the image resource ID
      */
@@ -71,5 +73,16 @@ public class Word {
  */
     public boolean hasImage() {
         return mImageResourceId != NO_IMAGE_PROVIDED;
+    }
+
+    @Override
+    public String toString() {
+        return "Word{" +
+                "mMiwakTranslation='" + mMiwakTranslation + '\'' +
+                ", mDefaultTranslation='" + mDefaultTranslation + '\'' +
+                ", mArabicTranslation='" + mArabicTranslation + '\'' +
+                ", mImageResourceId=" + mImageResourceId +
+                ", mAudioResid=" + mAudioResid +
+                '}';
     }
 }
